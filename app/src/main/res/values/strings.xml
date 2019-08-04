@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Headache2</string>
+    <string name="Caesar">The Box of Caesar</string>
+    <string name="guess">Guess The Image</string>
+    <string name="start">Start</string>
+    <string name="continue_game">Continue</string>
 </resources>
