@@ -42,7 +42,7 @@
         android:textSize="36sp" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/bgpink"
