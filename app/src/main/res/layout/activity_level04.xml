@@ -43,7 +43,8 @@
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/clipart1091456"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:onClick="onClick"/>
 
 
 </LinearLayout>

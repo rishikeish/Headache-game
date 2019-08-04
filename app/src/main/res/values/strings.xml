@@ -4,4 +4,8 @@
     <string name="guess">Guess The Image</string>
     <string name="start">Start</string>
     <string name="continue_game">Continue</string>
+    <string name="decode">Decode the Message</string>
+    <string name="game">TSAJ htDe ihpc IMo</string>
+    <string name="message">Enter decoded message here</string>
+
 </resources>
