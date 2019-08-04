@@ -80,46 +80,148 @@
     <LinearLayout
         android:id="@+id/l3area"
         android:layout_width="335dp"
-        android:layout_height="332dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="fill_horizontal"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/bgpink"
         android:focusable="auto"
         android:gravity="center_horizontal"
         android:orientation="horizontal"
         android:visibility="visible"
-        android:layout_marginTop="40dp"
-        android:layout_marginStart="40dp"
 
 
-    >
+        >
 
         <TextView
             android:id="@+id/txtq1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
             android:layout_weight="1"
             android:focusable="auto"
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
             android:text="@string/q1"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="20dp"/>
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/ans1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
             android:layout_weight="1"
+            android:autofillHints=""
             android:clickable="true"
             android:ems="10"
+            android:focusable="true"
             android:inputType="textPersonName"
             android:maxLength="5"
             android:singleLine="true"
-            android:typeface="normal"
-            android:layout_marginRight="25dp"
-            />
+            android:typeface="normal" />
 
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="331dp"
+        android:layout_height="76dp"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bgpink"
+        android:focusable="auto"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+
+        <TextView
+            android:id="@+id/txtq2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:focusable="auto"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="@string/q2"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ans2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:clickable="true"
+            android:ems="10"
+            android:focusable="true"
+            android:inputType="textPersonName"
+            android:maxLength="5"
+            android:singleLine="true"
+            android:typeface="normal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="331dp"
+        android:layout_height="76dp"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bgpink"
+        android:focusable="auto"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+
+        <TextView
+            android:id="@+id/txtq3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:focusable="auto"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="@string/q6"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ans3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:clickable="true"
+            android:ems="10"
+            android:focusable="true"
+            android:inputType="textPersonName"
+            android:maxLength="7"
+            android:singleLine="true"
+            android:typeface="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="428dp"
+        android:layout_height="122dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/submit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="#F2CAAAC8"
+            android:text="Done" />
     </LinearLayout>
 
 
