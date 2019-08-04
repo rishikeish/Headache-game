@@ -1,3 +1,27 @@
 <resources>
-    <string name="app_name">Headache2</string>
+    <string name="app_name">Headache</string>
+    <string name="lvl3">Level 03</string>
+    <string name="lvl3bns">Bonus Level 03</string>
+    <string name="lvl1">Level 01</string>
+    <string name="lvl1bns">Bonus Level 01</string>
+    <string name="lvl2">Level 02</string>
+    <string name="lvl2bns">Bonus Level 02</string>
+    <string name="lvl4">Level 04</string>
+    <string name="lvl4bns">Bonus Level 04</string>
+    <string name="lvl3challenge">Cryptorelated</string>
+    <string name="lvl3bnschallenge">Decoder</string>
+    <string name="poetry">POETRY</string>
+    <string name="example">eg: Verse</string>
+    <string name="q1"> WBAEG </string>
+    <string name="q2">AYBVT</string>
+    <string name="q3">CAZQT</string>
+    <string name="q4">JAIFEG</string>
+    <string name="q5">QZHHTJ</string>
+    <string name="q6">WKWWIPB</string>
+    <string name="q7">HKAQTAB</string>
+    <string name="q8">WEVTAEGO</string>
+    <string name="q9">VTJICYZA</string>
+    <string name="q10">WEJTAIJKAT</string>
+
+
 </resources>
