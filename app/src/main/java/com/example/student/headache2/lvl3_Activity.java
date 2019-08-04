@@ -14,7 +14,7 @@ public class lvl3_Activity extends AppCompatActivity {
     }
 
     public void sendMessage(View view){
-        Intent intent = new Intent(this , level04_game.class);
+        Intent intent = new Intent(this , Level04.class);
         startActivity(intent);
 
     }
