@@ -26,6 +26,7 @@ public class level04_game extends AppCompatActivity {
         if(text == correct){
             Intent intent = new Intent();
             startActivity(intent);
+
         }else{
             Toast.makeText(getApplicationContext(),"wrong entry", Toast.LENGTH_SHORT).show();
         }

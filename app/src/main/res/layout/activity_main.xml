@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,64 +11,43 @@
 
     <TextView
         android:id="@+id/guess"
+        android:layout_width="353dp"
+        android:layout_height="98dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="Headache The Game"
+        android:textColor="#FFF"
+        android:textSize="36sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="318dp"
+        app:srcCompat="@drawable/icboss" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="314dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/pink"
+        android:layout_gravity="center"
+        android:onClick="sendMessage"
+        />
+
+    <Switch
+        android:id="@+id/switch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="40dp"
-        android:text="Guess the Image"
-        android:textColor="#FFF"
-        android:textSize="22sp" />
-
-    <LinearLayout
-        android:layout_marginTop="50dp"
-        android:layout_width="290dp"
-        android:layout_height="150dp"
-        android:layout_gravity="center"
-        android:background="@drawable/bgquestion"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/start"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="40dp"
-            android:lineSpacingExtra="6dp"
-            android:text="Start"
-            android:textAlignment="center"
-            android:textColor="#332FA2"
-            android:textSize="22sp"
-            />
-    </LinearLayout>
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="200dp"
-        android:layout_height="80dp"
-        android:layout_gravity="center"
-        android:background="@drawable/bgpurple"
-        android:ems="10"
-        android:gravity="center"
-        android:inputType="textPersonName"
-        android:text="Name"
+        android:background="@drawable/bgbtn"
+        android:text="Sound"
+        android:textAlignment="center"
         android:textColor="#332FA2"
-        android:textSize="32sp"
-        android:layout_marginTop="70dp"
-        android:focusable="false"
-        android:clickable="false"
-        android:padding="10dp"
-        android:layout_marginBottom="70dp"
-        />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="28dp"
-        android:layout_marginRight="28dp"
-        android:text="TextView"
-        android:textColor="#FFF"
-        android:textSize="24sp" />
+        android:textSize="36sp" />
 
 
 </LinearLayout>

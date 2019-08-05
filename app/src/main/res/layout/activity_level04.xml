@@ -32,7 +32,7 @@
         android:background="@drawable/bgbtn"
         android:text="@string/continue_game"
         android:textAlignment="center"
-        android:textColor="@color/colorUse"
+        android:textColor="#332FA2"
         android:textSize="36sp" />
 
     <ImageButton
@@ -44,7 +44,9 @@
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/clipart1091456"
         android:layout_gravity="center"
-        android:onClick="onClick"/>
+        android:onClick="onClick"
+        android:background="@null"
+        />
 
 
 </LinearLayout>
