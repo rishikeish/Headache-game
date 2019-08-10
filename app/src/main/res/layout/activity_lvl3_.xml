@@ -42,7 +42,8 @@
             android:textAlignment="center"
             android:textColor="@color/colorPrimary"
             android:textSize="18sp"
-            tools:targetApi="lollipop" />
+
+             />
 
 
     </LinearLayout>
@@ -104,7 +105,9 @@
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
             android:text="@string/q1"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+
+            />
 
         <EditText
             android:id="@+id/ans1"
@@ -119,7 +122,9 @@
             android:inputType="textPersonName"
             android:maxLength="5"
             android:singleLine="true"
-            android:typeface="normal" />
+            android:typeface="normal"
+
+            />
 
 
     </LinearLayout>
