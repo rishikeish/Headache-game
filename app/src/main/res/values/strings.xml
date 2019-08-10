@@ -7,5 +7,14 @@
     <string name="decode">Decode the Message</string>
     <string name="game">TSAJ htDe ihpc IMo</string>
     <string name="message">Enter decoded message here</string>
+    <string name="lvl3challenge">Cryptogram</string>
+    <string name="lvl3">Level 03</string>
+    <string name="poetry">Theme - Poetry</string>
+    <string name="example">Eg - Verse</string>
+    <string name="q1">WBAEG</string>
+    <string name="q2">AYBVT</string>
+    <string name="q3">HKAQTAB</string>
+    <string name="q4">WKWWIPB</string>
+
 
 </resources>
