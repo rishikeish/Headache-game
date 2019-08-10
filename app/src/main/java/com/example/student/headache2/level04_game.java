@@ -15,22 +15,19 @@ public class level04_game extends AppCompatActivity {
         setContentView(R.layout.activity_level04_game);
     }
 
-    protected void onClick(View view){
+    protected void onClick(View view) {
 
-        EditText editText=(EditText)findViewById(R.id.message);
+        EditText editText = (EditText) findViewById(R.id.message);
 
-        String text=editText.getText().toString();
+        String text = editText.getText().toString();
 
         String correct = "this is the mad project";
 
-        if(text == correct){
-            Intent intent = new Intent();
-            startActivity(intent);
+        if (text == correct) {
+            Toast.makeText(getApplicationContext(), "Right entry", Toast.LENGTH_SHORT).show();
 
-        }else{
-            Toast.makeText(getApplicationContext(),"wrong entry", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(getApplicationContext(), "wrong entry", Toast.LENGTH_SHORT).show();
         }
-
-
     }
 }

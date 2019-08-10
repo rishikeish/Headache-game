@@ -190,7 +190,7 @@
             android:focusable="auto"
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
-            android:text="@string/q6"
+            android:text="@string/q3"
             android:textStyle="bold" />
 
         <EditText
