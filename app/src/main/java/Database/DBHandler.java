@@ -32,7 +32,7 @@ public class DBHandler extends SQLiteOpenHelper {
 
     }
 
-    public void addUser(String username, String password){
+    public boolean addUser(String username, String password){
         SQLiteDatabase db = getWritableDatabase();
 
         ContentValues values = new ContentValues();
@@ -40,6 +40,7 @@ public class DBHandler extends SQLiteOpenHelper {
         values.put(UserMasters.Users.COL_2, password);
 
         long newRowId = db.insert(UserMasters.Users.TABLE_NAME, null, values);
+        return true;
     }
 
     public List readAllUsers() {
@@ -63,20 +64,23 @@ public class DBHandler extends SQLiteOpenHelper {
                 sortOrder
         );
 
-        List userName = new ArrayList<>();
-        List passwords = new ArrayList<>();
+        ArrayList<User> users = new ArrayList<>();
+
 
         while(cursor.moveToNext()){
 
             String username = cursor.getString( cursor.getColumnIndexOrThrow(UserMasters.Users.COL_1));
             String password = cursor.getString( cursor.getColumnIndexOrThrow(UserMasters.Users.COL_2));
 
-            userName.add(username);
-            passwords.add(password);
+            User user = new User();
+            user.setUsername(username);
+            user.setPassword(password);
+            users.add(user);
+
         }
 
         cursor.close();
-        return userName;
+        return users;
 
     }
 
