@@ -8,6 +8,7 @@
     <string name="decode">Decode the Message</string>
     <string name="game">TSAJ htDe ihpc IMo</string>
     <string name="message">Enter decoded message here</string>
+
     <string name="lvl3challenge">Cryptogram</string>
     <string name="lvl3">Level 03</string>
     <string name="poetry">Theme - Poetry</string>
@@ -16,22 +17,26 @@
     <string name="q2">AYBVT</string>
     <string name="q3">HKAQTAB</string>
     <string name="q4">WKWWIPB</string>
+
     <string name="lvl2challenge">Figure out the four letter word</string>
     <string name="outloud">Out Loud</string>
     <string name="lvl2puzzle1">Big fat cat</string>
     <string name="lvl2puzzle2">that sleeps</string>
     <string name="lvl2puzzle3">in trees, up in</string>
     <string name="lvl2puzzle4">leaves</string>
+
     <string name="login">LOGIN</string>
     <string name="register">REGISTER</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
+
    <string name="app">HEADACHE</string>
     <string name="play">PLAY</string>
     <string name="music">Sound On</string>
     <string name="todo">TODO</string>
     <string name="settings">SETTINGS</string>
 
-
+    <string name="level01">Level 01</string>
+    <string name="lvl1challenge">Find four words from below</string>
 
 </resources>

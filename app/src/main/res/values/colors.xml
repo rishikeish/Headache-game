@@ -6,5 +6,6 @@
     <color name="Question">#5A009C</color>
     <color name="q">#FFFF</color>
     <color name="hint">#5F5363</color>
+    <color name="answer">#090505</color>
 
 </resources>
