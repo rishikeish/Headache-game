@@ -21,6 +21,10 @@
     <string name="lvl2puzzle2">that sleeps</string>
     <string name="lvl2puzzle3">in trees, up in</string>
     <string name="lvl2puzzle4">leaves</string>
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
 
 
 </resources>

@@ -55,14 +55,14 @@
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="174dp"
-        android:layout_height="wrap_content"
+        android:layout_width="94dp"
+        android:layout_height="83dp"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="50dp"
         android:adjustViewBounds="true"
+        android:background="@null"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/tick"
-        android:background="@null"/>
+        app:srcCompat="@drawable/tick" />
 
 
 </LinearLayout>
