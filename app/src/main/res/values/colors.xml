@@ -4,5 +4,7 @@
     <color name="colorPrimaryDark">#FF5EA2</color>
     <color name="colorAccent">#D81B60</color>
     <color name="Question">#5A009C</color>
-    <color name="q">#FFF</color>
+    <color name="q">#FFFF</color>
+    <color name="hint">#5F5363</color>
+
 </resources>
