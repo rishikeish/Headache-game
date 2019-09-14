@@ -15,7 +15,7 @@ public class level04_game extends AppCompatActivity {
         setContentView(R.layout.activity_level04_game);
     }
 
-    protected void onClick(View view) {
+    protected void sendMessage(View view){
 
         EditText editText = (EditText) findViewById(R.id.message);
 
