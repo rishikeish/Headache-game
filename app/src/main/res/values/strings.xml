@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <string name="Caesar">The Box of Caesar</string>
     <string name="guess">Guess The Image</string>
@@ -25,8 +25,12 @@
     <string name="register">REGISTER</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
-    <string name="username">Username</string>
-    <string name="password">Password</string>
+   <string name="app">HEADACHE</string>
+    <string name="play">PLAY</string>
+    <string name="music">Sound On</string>
+    <string name="todo">TODO</string>
+    <string name="settings">SETTINGS</string>
+
 
 
 </resources>

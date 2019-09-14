@@ -14,16 +14,81 @@
         android:layout_width="353dp"
         android:layout_height="98dp"
         android:layout_gravity="center"
-        android:layout_marginTop="40dp"
-        android:text="Headache The Game"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="40dp"
+        android:text="@string/app"
+        android:fontFamily="@font/veteran_typewriter"
         android:textColor="#FFF"
-        android:textSize="36sp" />
+        android:textSize="60sp" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:layout_height="318dp"
-        app:srcCompat="@drawable/icboss" />
+        app:srcCompat="@drawable/logo"
+        android:contentDescription="@string/todo" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/play"
+            android:layout_width="76dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/play"
+
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/veteran_typewriter"
+            android:text="@string/play"
+            android:textAlignment="center"
+            android:textColor="@color/q"
+            android:textSize="30dp"
+            android:layout_marginTop="55dp"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/settings"
+        android:layout_width="76dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/ssettings"
+
+        android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/setting"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/veteran_typewriter"
+            android:text="@string/settings"
+            android:textAlignment="center"
+            android:textColor="@color/q"
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"
+
+            />
+
+    </LinearLayout>
 
 
 </LinearLayout>
