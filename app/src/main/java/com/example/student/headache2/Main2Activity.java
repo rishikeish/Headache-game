@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
+
 import java.util.List;
 
 
@@ -29,6 +29,7 @@ public class Main2Activity extends AppCompatActivity {
 
         dbHandler = new DBHandler(this);
     }
+
 
     protected void register(View view){
 
@@ -51,7 +52,7 @@ public class Main2Activity extends AppCompatActivity {
 
         if(!checkUser(username)) {
             dbHandler.addUser(username, password);
-            Intent i = new Intent(getApplicationContext(), lvl3_Activity.class);
+            Intent i = new Intent(getApplicationContext(), Level2_Activity.class);
             i.putExtra("UserName", username);
 
             startActivity(i);
@@ -64,7 +65,7 @@ public class Main2Activity extends AppCompatActivity {
     }
 
     protected void signIn(View view){
-        EditText edit1 = (EditText)findViewById(R.id.addUsername);
+       /* EditText edit1 = (EditText)findViewById(R.id.addUsername);
         String username = edit1.getText().toString();
 
         if (isEmpty(username)) {
@@ -81,23 +82,25 @@ public class Main2Activity extends AppCompatActivity {
         }
 
         if(activeUser(username ,password) == true ){
-            Intent i = new Intent(getApplicationContext(), lvl3_Activity.class);
+            Intent i = new Intent(getApplicationContext(),Level2_Activity.class);
             i.putExtra("UserName", username);
 
             startActivity(i);
-        }else{
+        }else{*/
             Intent i = new Intent(getApplicationContext(), this.getClass());
 
             startActivity(i);
 
         }
-    }
+ //   }
 
 
     boolean isEmpty(String text) {
 
         return TextUtils.isEmpty(text);
     }
+
+
 
     public boolean activeUser(String username , String password){
 

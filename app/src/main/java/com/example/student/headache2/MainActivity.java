@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void sendMessage(View view){
 
-        Intent intent = new Intent(this , Level2_Activity.class);
+        Intent intent = new Intent(this , Main2Activity.class);
         startActivity(intent);
 
     }
