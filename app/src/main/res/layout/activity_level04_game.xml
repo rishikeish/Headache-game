@@ -16,6 +16,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
         android:text="@string/decode"
+        android:fontFamily="@font/veteran_typewriter"
         android:textColor="#FFF"
         android:textSize="36sp"
         />
@@ -29,40 +30,44 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="224dp"
-        android:layout_height="110dp"
+        android:layout_width="331dp"
+        android:layout_height="63dp"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:background="@drawable/bgquestion"
-        android:lineSpacingExtra="6dp"
+        android:fontFamily="@font/permanentmarker"
 
+        android:lineSpacingExtra="6dp"
         android:text="@string/game"
         android:textAlignment="center"
         android:textColor="#332FA2"
-        android:textSize="36sp" />
+        android:textSize="28sp" />
 
     <EditText
         android:id="@+id/message"
-        android:layout_width="match_parent"
+        android:layout_width="329dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
         android:background="@drawable/bgpink"
         android:ems="10"
+        android:fontFamily="@font/permanentmarker"
         android:hint="@string/message"
         android:inputType="textPersonName"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"/>
+        android:textAlignment="center"
+        />
 
     <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="94dp"
-        android:layout_height="83dp"
+        android:id="@+id/lvl4submit"
+        android:layout_width="129dp"
+        android:layout_height="99dp"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:adjustViewBounds="true"
         android:background="@null"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/tick" />
+        app:srcCompat="@drawable/play" />
 
 
 </LinearLayout>

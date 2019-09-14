@@ -16,33 +16,38 @@
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
         android:text="@string/Caesar"
+        android:fontFamily="@font/permanentmarker"
         android:textColor="#FFF"
         android:textSize="36sp" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="match_parent"
-        android:layout_height="442dp"
-        app:srcCompat="@drawable/caesar" />
+        android:layout_width="309dp"
+        android:layout_height="351dp"
+        app:srcCompat="@drawable/caesar"
+        android:layout_marginLeft="60dp"
+        />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bgbtn"
+        android:layout_width="292dp"
+        android:layout_height="73dp"
+        android:background="@drawable/idle_background"
+        android:fontFamily="@font/permanentmarker"
         android:text="@string/continue_game"
+        android:layout_marginLeft="60dp"
         android:textAlignment="center"
         android:textColor="#332FA2"
         android:textSize="36sp" />
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="160dp"
-        android:layout_height="123dp"
-        android:layout_marginTop="15dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="0dp"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/clipart1091456"
+        app:srcCompat="@drawable/play"
         android:layout_gravity="center"
         android:onClick="onClick"
         android:background="@null"

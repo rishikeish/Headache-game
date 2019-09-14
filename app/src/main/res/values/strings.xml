@@ -18,6 +18,8 @@
     <string name="q3">HKAQTAB</string>
     <string name="q4">WKWWIPB</string>
 
+    <string name="lvl2">LEVEL 02</string>
+    <string name="lvl2hint">Out Loud</string>
     <string name="lvl2challenge">Figure out the four letter word</string>
     <string name="outloud">Out Loud</string>
     <string name="lvl2puzzle1">Big fat cat</string>

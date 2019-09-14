@@ -12,21 +12,23 @@
     >
 
     <TextView
-        android:id="@+id/txtlvl3"
+        android:id="@+id/txtlvl2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
         android:linksClickable="false"
-        android:text="@string/lvl3"
+        android:text="@string/lvl2"
         android:textColor="#FFF"
-        android:textSize="27sp"
+        android:textSize="50sp"
+        android:fontFamily="@font/veteran_typewriter"
+        android:textAllCaps="true"
 
         />
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="64dp"
+        android:layout_height="78dp"
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
         android:background="@drawable/bgquestion"
@@ -34,15 +36,16 @@
 
         <TextView
             android:id="@+id/textViewTop"
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
+            android:layout_width="235dp"
+            android:layout_height="69dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:background="@drawable/bgquestion"
-            android:text="@string/outloud"
+            android:fontFamily="@font/permanentmarker"
+            android:text="@string/lvl2hint"
             android:textAlignment="center"
             android:textColor="@color/colorPrimary"
-            android:textSize="18sp" />
+            android:textSize="25sp" />
 
     </LinearLayout>
 
@@ -54,9 +57,11 @@
         android:text="@string/lvl2challenge"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:textStyle="bold"
         android:textColor="@android:color/background_light"
-        android:visibility="visible" />
+        android:visibility="visible"
+        android:textSize="20dp"
+        android:fontFamily="@font/fredokaoneregular"
+        />
 
     <TextView
         android:id="@+id/textView4"
@@ -71,9 +76,10 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/background_light"
         android:textIsSelectable="false"
-        android:textStyle="italic"
         android:visibility="visible"
-        android:layout_marginStart="175dp"/>
+        android:layout_marginStart="175dp"
+        android:fontFamily="@font/specialelite"
+        />
 
     <TextView
         android:id="@+id/textView5"
@@ -88,9 +94,9 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/background_light"
         android:textIsSelectable="false"
-        android:textStyle="italic"
         android:visibility="visible"
-        android:layout_marginStart="175dp"/>
+        android:layout_marginStart="175dp"
+        android:fontFamily="@font/specialelite"/>
 
     <TextView
         android:id="@+id/textView6"
@@ -105,7 +111,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/background_light"
         android:textIsSelectable="false"
-        android:textStyle="italic"
+        android:fontFamily="@font/specialelite"
         android:visibility="visible"
         android:layout_marginStart="175dp"/>
 
@@ -122,7 +128,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/background_light"
         android:textIsSelectable="false"
-        android:textStyle="italic"
+        android:fontFamily="@font/specialelite"
         android:visibility="visible"
         android:layout_marginStart="175dp"/>
 
@@ -142,26 +148,26 @@
             android:background="@drawable/bgquestion"
             android:ems="10"
             android:hint="   Answer:"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:fontFamily="@font/permanentmarker"
+            />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="328dp"
-        android:layout_height="54dp"
-        android:layout_marginLeft="42dp"
-        android:layout_marginTop="50dp"
-        android:gravity="center"
-        android:orientation="horizontal">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:orientation="horizontal"
+        >
 
 
-        <ImageButton
-            android:id="@+id/imageButton5"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:layout_weight="1"
-            android:background="@null"
+        <Button
+            android:id="@+id/lvl3submit"
+            android:layout_width="83dp"
+            android:layout_height="79dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/nnext"
             android:onClick="sendMessage"
-            app:srcCompat="@drawable/bgbtn"
 
             />
 
