@@ -15,7 +15,7 @@
     <font
         android:fontStyle="italic"
         android:fontWeight="400"
-        android:font="@font/sf_toontime_blotch_Italic"
+        android:font="@font/sf_toontime_blotch_italic"
         />
 
     <font

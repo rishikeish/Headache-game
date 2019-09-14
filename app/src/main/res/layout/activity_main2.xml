@@ -56,15 +56,15 @@
         android:layout_marginStart="126dp"
         android:layout_marginTop="70dp"
         android:layout_marginEnd="127dp"
-        android:text="@string/login"
+        android:background="@drawable/bgpurple"
         android:fontFamily="@font/veteran_typewriter"
+        android:text="@string/login"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addPassword"
-        android:background="@drawable/bgpurple"
+        android:onClick="signIn"
 
-        />
+        app:layout_constraintTop_toBottomOf="@+id/addPassword" />
 
     <Button
         android:id="@+id/register"
@@ -82,6 +82,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signin"
         android:background="@drawable/bgpurple"
+        android:onClick="register"
         />
 
     <TextView
