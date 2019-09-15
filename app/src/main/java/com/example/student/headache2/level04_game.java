@@ -27,7 +27,7 @@ public class level04_game extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Right entry", Toast.LENGTH_SHORT).show();
 
         } else {
-            Toast.makeText(getApplicationContext(), "wrong entry", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Wrong entry", Toast.LENGTH_SHORT).show();
         }
     }
 }
