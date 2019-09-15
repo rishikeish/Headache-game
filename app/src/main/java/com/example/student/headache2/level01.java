@@ -50,7 +50,7 @@ public class level01 extends AppCompatActivity {
                 String answer4 = edit4.getText().toString();
 
                 if (isEmpty(answer1)|| isEmpty(answer2)|| isEmpty(answer3)|| isEmpty(answer4)){
-                    Toast t = Toast.makeText(getApplicationContext(), "You must enter username to register!", Toast.LENGTH_SHORT);
+                    Toast t = Toast.makeText(getApplicationContext(), "You must enter all 4 answers!", Toast.LENGTH_SHORT);
                     t.show();
                 }else if(correct(answer1) && correct(answer2) && correct(answer3) && correct(answer4)){
 
