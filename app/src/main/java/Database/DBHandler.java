@@ -14,6 +14,8 @@ public class DBHandler extends SQLiteOpenHelper {
     public static final String DATABASE_NAME = "Headache.db";
     public DBHandler( Context context) {
         super(context, DATABASE_NAME, null , 1);
+        context.deleteDatabase(DATABASE_NAME);
+
     }
 
     @Override
@@ -24,6 +26,69 @@ public class DBHandler extends SQLiteOpenHelper {
                 UserMasters.Users.COL_2+ " VARCHAR(30) ) " ;
 
         db.execSQL(QUERY1);
+
+        //level1 table
+        String QUERY1a = "CREATE TABLE " + UserMasters.Level1.TABLE_NAME + " ( " +
+                UserMasters.Level1._ID + " INTEGER PRIMARY KEY, " +
+                UserMasters.Level1.COL_1+ " VARCHAR(30) ) " ;
+
+        String QUERY2 = "INSERT INTO " +UserMasters.Level1.TABLE_NAME+" ("+ UserMasters.Level1.COL_1+ ") VALUES('BUBBLES')";
+        String QUERY3 = "INSERT INTO " +UserMasters.Level1.TABLE_NAME+" ("+ UserMasters.Level1.COL_1+ ") VALUES('SHAMPOO')";
+        String QUERY4 = "INSERT INTO " +UserMasters.Level1.TABLE_NAME+" ("+ UserMasters.Level1.COL_1+ ") VALUES('TOILET')";
+        String QUERY5 = "INSERT INTO " +UserMasters.Level1.TABLE_NAME+" ("+ UserMasters.Level1.COL_1+ ") VALUES('SOAP')";
+
+        db.execSQL(QUERY1a);
+        db.execSQL(QUERY2);
+        db.execSQL(QUERY3);
+        db.execSQL(QUERY4);
+        db.execSQL(QUERY5);
+
+        //level2 table
+
+        String QUERY1b = "CREATE TABLE " + UserMasters.Level2.TABLE_NAME + " ( " +
+                UserMasters.Level2._ID + " INTEGER PRIMARY KEY, " +
+                UserMasters.Level2.COL_1+ " VARCHAR(30) ) " ;
+
+        String QUERY2b = "INSERT INTO " +UserMasters.Level2.TABLE_NAME+" ("+ UserMasters.Level2.COL_1+ ") VALUES('SALT')";
+
+
+        db.execSQL(QUERY1b);
+        db.execSQL(QUERY2b);
+
+        //level03 table
+        String QUERY1c = "CREATE TABLE " + UserMasters.Level1.TABLE_NAME + " ( " +
+                UserMasters.Level3._ID + " INTEGER PRIMARY KEY, " +
+                UserMasters.Level3.COL_1+ " VARCHAR(30) ) " ;
+
+        String QUERY2c = "INSERT INTO " +UserMasters.Level3.TABLE_NAME+" ("+ UserMasters.Level3.COL_1+ ") VALUES(BUBBLES)";
+        String QUERY3c = "INSERT INTO " +UserMasters.Level3.TABLE_NAME+" ("+ UserMasters.Level3.COL_1+ ") VALUES(SHAMPOO)";
+        String QUERY4c = "INSERT INTO " +UserMasters.Level3.TABLE_NAME+" ("+ UserMasters.Level3.COL_1+ ") VALUES(TOILET)";
+        String QUERY5c = "INSERT INTO " +UserMasters.Level3.TABLE_NAME+" ("+ UserMasters.Level3.COL_1+ ") VALUES(SOAP)";
+
+        db.execSQL(QUERY1c);
+        db.execSQL(QUERY2c);
+        db.execSQL(QUERY3c);
+        db.execSQL(QUERY4c);
+        db.execSQL(QUERY5c);
+
+        //level04 table
+
+
+        String QUERY1d = "CREATE TABLE " + UserMasters.Level1.TABLE_NAME + " ( " +
+                UserMasters.Level4._ID + " INTEGER PRIMARY KEY, " +
+                UserMasters.Level4.COL_1+ " VARCHAR(100),"+
+                UserMasters.Level4.COL_2+ " VARCHAR(100) )";
+
+        String QUERY2d = "INSERT INTO " +UserMasters.Level4.TABLE_NAME+" ("+ UserMasters.Level4.COL_1+ " ," +UserMasters.Level4.COL_2+ ") VALUES('' , '')";
+        String QUERY3d = "INSERT INTO " +UserMasters.Level4.TABLE_NAME+" ("+ UserMasters.Level4.COL_1+ " ," +UserMasters.Level4.COL_2+ ") VALUES('', '')";
+        String QUERY4d = "INSERT INTO " +UserMasters.Level4.TABLE_NAME+" ("+ UserMasters.Level4.COL_1+ " ," +UserMasters.Level4.COL_2+ ") VALUES('', '')";
+        String QUERY5d = "INSERT INTO " +UserMasters.Level4.TABLE_NAME+" ("+ UserMasters.Level4.COL_1+ " ," +UserMasters.Level4.COL_2+ ") VALUES('', '')";
+
+        db.execSQL(QUERY1d);
+        db.execSQL(QUERY2d);
+        db.execSQL(QUERY3d);
+        db.execSQL(QUERY4d);
+        db.execSQL(QUERY5d);
 
     }
 
@@ -51,7 +116,7 @@ public class DBHandler extends SQLiteOpenHelper {
                 UserMasters.Users.COL_2
         };
 
-        String sortOrder = UserMasters.Users.COL_1 + "DESC";
+        String sortOrder = UserMasters.Users.COL_1 + " DESC";
 
 
         Cursor cursor = db.query(

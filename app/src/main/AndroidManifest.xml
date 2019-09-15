@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Main2Activity"/>
         <activity android:name=".Level2_Activity" />
-
+        <activity android:name=".level01" />
         <activity android:name=".level04_game" />
         <activity android:name=".Level04" />
         <activity android:name=".MainActivity">
