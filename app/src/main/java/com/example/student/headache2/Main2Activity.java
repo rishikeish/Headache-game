@@ -8,7 +8,6 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -16,7 +15,7 @@ import java.util.List;
 
 
 import Database.DBHandler;
-import Database.User;
+import Classes.User;
 
 
 public class Main2Activity extends AppCompatActivity {
@@ -87,7 +86,7 @@ public class Main2Activity extends AppCompatActivity {
                     t.show();
                 }else if(!checkUser(username)) {
                     dbHandler.addUser(username, password);
-                    Intent i = new Intent(getApplicationContext(), level01.class);
+                    Intent i = new Intent(getApplicationContext(), Level2_Activity.class);
                     i.putExtra("UserName", username);
 
                     Toast t = Toast.makeText(getApplicationContext(), "Registered successfully!", Toast.LENGTH_SHORT);

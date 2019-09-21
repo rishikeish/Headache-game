@@ -13,9 +13,11 @@ public class Level2Handler extends SQLiteOpenHelper {
 
     public static final String DATABASE_NAME = "Headache.db";
 
-    public Level2Handler( Context context) {
+    public Level2Handler( Context context)
+    {
         super(context, DATABASE_NAME, null , 1);
     }
+
 
     @Override
     public void onCreate(SQLiteDatabase db) {

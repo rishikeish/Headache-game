@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.widget.Button;
 
 import android.view.View;
@@ -13,9 +14,12 @@ import android.widget.Toast;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
+import Classes.Level1;
+import Database.DBHandler;
 import Database.Level1Handler;
+
 
 
 public class level01 extends AppCompatActivity {
@@ -74,9 +78,11 @@ public class level01 extends AppCompatActivity {
 
     public boolean correct(String word){
 
-        List<String> list = db.readAnswers();
+        Log.w("TAG" , word );
+        List<String> list =  db.readAnswers();
 
         for(String ans : list){
+            Log.w("mega" , "for loop runs" );
             if(word.equalsIgnoreCase(ans)){
                 return true;
             }
