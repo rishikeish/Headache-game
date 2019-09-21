@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <font-family xmlns:android="http://schemas.android.com/apk/res/android">
-    <font 
+
+    <font
         android:fontStyle="normal"
         android:fontWeight="400"
         android:font="@font/veteran_typewriter"
@@ -18,7 +19,8 @@
         android:font="@font/sf_toontime_blotch_italic"
         />
 
-    <font        android:fontStyle="italic"
+    <font
+        android:fontStyle="italic"
         android:fontWeight="400"
         android:font="@font/sf_toontime_italic"
         />
