@@ -95,6 +95,10 @@ public class level01 extends AppCompatActivity {
 
         return TextUtils.isEmpty(text);
     }
+
+    @Override
+    public void onBackPressed() {
+
+    }
+
 }
-
-

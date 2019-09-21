@@ -41,10 +41,10 @@ public class DBHandler extends SQLiteOpenHelper {
 
 
 
-        String QUERY2a = "INSERT INTO " +UserMasters.Level1.TABLE_NAME+" ("+ UserMasters.Level1.COL_1+ ") VALUES('BUBBLES')";
-        String QUERY3a = "INSERT INTO " +UserMasters.Level1.TABLE_NAME+" ("+ UserMasters.Level1.COL_1+ ") VALUES('SHAMPOO')";
-        String QUERY4a = "INSERT INTO " +UserMasters.Level1.TABLE_NAME+" ("+ UserMasters.Level1.COL_1+ ") VALUES('TOILET')";
-        String QUERY5a = "INSERT INTO " +UserMasters.Level1.TABLE_NAME+" ("+ UserMasters.Level1.COL_1+ ") VALUES('SOAP')";
+        String QUERY2a = "INSERT INTO " +UserMasters.Level1.TABLE_NAME+" ("+ UserMasters.Level1.COL_1+ ") VALUES('BUBBLES'),('BUBBLE'),('BUB'),('Hob'),('Two'),('Oak'),('Tit'),('Rush'),('Beak')";
+        String QUERY3a = "INSERT INTO " +UserMasters.Level1.TABLE_NAME+" ("+ UserMasters.Level1.COL_1+ ") VALUES('SHAMPOO'),('Poo'),('Pooh'),('Sham'),('Pal'),('Paly'),('Tar'),('Dry'),('Dryer')";
+        String QUERY4a = "INSERT INTO " +UserMasters.Level1.TABLE_NAME+" ("+ UserMasters.Level1.COL_1+ ") VALUES('TOILET'),('Tsk'),('Toil'),('Let'),('Oil'),('Bad'),('Ado'),('Bob'),('Bait'),('Wot')";
+        String QUERY5a = "INSERT INTO " +UserMasters.Level1.TABLE_NAME+" ("+ UserMasters.Level1.COL_1+ ") VALUES('SOAP'),('Ham'),('Amp'),('Lot'),('Loth'),('Cloth'),('Brush'),('Bat'),('Bath'),('Baths')";
 
         db.execSQL(QUERY1a);
         db.execSQL(QUERY2a);
