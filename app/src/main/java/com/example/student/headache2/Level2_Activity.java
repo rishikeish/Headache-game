@@ -12,7 +12,6 @@ import android.widget.Toast;
 
 import java.util.List;
 
-import Classes.Level1;
 import Database.Level2Handler;
 
 public class Level2_Activity extends AppCompatActivity {
