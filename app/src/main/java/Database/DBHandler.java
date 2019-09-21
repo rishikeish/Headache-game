@@ -25,7 +25,7 @@ public class DBHandler extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
 
-        //db.execSQL("DROP TABLE IF EXISTS "+UserMasters.Users.TABLE_NAME+ " ;");
+
 
         String QUERY1 = "CREATE TABLE " + UserMasters.Users.TABLE_NAME + " ( " +
                 UserMasters.Users.COL_1 + " VARCHAR(20) PRIMARY KEY, " +
@@ -34,67 +34,51 @@ public class DBHandler extends SQLiteOpenHelper {
         db.execSQL(QUERY1);
 
         //level1 table
-        String QUERY1a = "CREATE TABLE IF NOT EXISTS " + UserMasters.Level1.TABLE_NAME + " ( " +
+
+        String QUERY1a = "CREATE TABLE " + UserMasters.Level1.TABLE_NAME + " ( " +
                 UserMasters.Level1._ID + " INTEGER PRIMARY KEY, " +
                 UserMasters.Level1.COL_1+ " VARCHAR(30) ) " ;
 
 
-        ContentValues values = new ContentValues();
-        values.put(UserMasters.Level1.COL_1, "BUBBLES");
-        values.put(UserMasters.Level1.COL_1, "SHAMPOO");
-        values.put(UserMasters.Level1.COL_1, "TOILET");
-        values.put(UserMasters.Level1.COL_1, "SOAP");
 
-
-        long newRowId = db.insert(UserMasters.Level1.TABLE_NAME, null, values);
-
-//        String QUERY2 = "INSERT INTO " +UserMasters.Level1.TABLE_NAME+" (ANSWERS) VALUES('BUBBLES')";
-//        String QUERY3 = "INSERT INTO " +UserMasters.Level1.TABLE_NAME+" ("+ UserMasters.Level1.COL_1+ ") VALUES('SHAMPOO')";
-//        String QUERY4 = "INSERT INTO " +UserMasters.Level1.TABLE_NAME+" ("+ UserMasters.Level1.COL_1+ ") VALUES('TOILET')";
-//        String QUERY5 = "INSERT INTO " +UserMasters.Level1.TABLE_NAME+" ("+ UserMasters.Level1.COL_1+ ") VALUES('SOAP')";
+        String QUERY2a = "INSERT INTO " +UserMasters.Level1.TABLE_NAME+" ("+ UserMasters.Level1.COL_1+ ") VALUES('BUBBLES')";
+        String QUERY3a = "INSERT INTO " +UserMasters.Level1.TABLE_NAME+" ("+ UserMasters.Level1.COL_1+ ") VALUES('SHAMPOO')";
+        String QUERY4a = "INSERT INTO " +UserMasters.Level1.TABLE_NAME+" ("+ UserMasters.Level1.COL_1+ ") VALUES('TOILET')";
+        String QUERY5a = "INSERT INTO " +UserMasters.Level1.TABLE_NAME+" ("+ UserMasters.Level1.COL_1+ ") VALUES('SOAP')";
 
         db.execSQL(QUERY1a);
-//        db.execSQL(QUERY2);
-//        db.execSQL(QUERY3);
-//        db.execSQL(QUERY4);
-//        db.execSQL(QUERY5);
+        db.execSQL(QUERY2a);
+        db.execSQL(QUERY3a);
+        db.execSQL(QUERY4a);
+        db.execSQL(QUERY5a);
 
         //level2 table
 
-        //db.execSQL("DROP TABLE IF EXISTS "+UserMasters.Level2.TABLE_NAME+ " ;");
 
-        String QUERY1b = "CREATE TABLE IF NOT EXISTS " + UserMasters.Level2.TABLE_NAME + " ( " +
+
+        String QUERY1b = "CREATE TABLE " + UserMasters.Level2.TABLE_NAME + " ( " +
                 UserMasters.Level2._ID + " INTEGER PRIMARY KEY, " +
                 UserMasters.Level2.COL_1+ " VARCHAR(30) ) " ;
 
-        //String QUERY2b = "INSERT INTO " +UserMasters.Level2.TABLE_NAME+" ("+ UserMasters.Level2.COL_1+ ") VALUES('SALT')";
-
+        String QUERY2b = "INSERT INTO " +UserMasters.Level2.TABLE_NAME+" ("+ UserMasters.Level2.COL_1+ ") VALUES('SALT')";
 
         db.execSQL(QUERY1b);
-       // db.execSQL(QUERY2b);
+        db.execSQL(QUERY2b);
 
         //level03 table
 
- //       db.execSQL("DROP TABLE IF EXISTS "+UserMasters.Level3.TABLE_NAME+ " ;");
-        String QUERY1c = "CREATE TABLE IF NOT EXISTS " + UserMasters.Level3.TABLE_NAME + " ( " +
+
+        String QUERY1c = "CREATE TABLE " + UserMasters.Level3.TABLE_NAME + " ( " +
                 UserMasters.Level3._ID + " INTEGER PRIMARY KEY, " +
                 UserMasters.Level3.COL_1+ " VARCHAR(30) ) " ;
 
-//        String QUERY2c = "INSERT INTO " +UserMasters.Level3.TABLE_NAME+" ("+ UserMasters.Level3.COL_1+ ") VALUES(BUBBLES)";
-//        String QUERY3c = "INSERT INTO " +UserMasters.Level3.TABLE_NAME+" ("+ UserMasters.Level3.COL_1+ ") VALUES(SHAMPOO)";
-//        String QUERY4c = "INSERT INTO " +UserMasters.Level3.TABLE_NAME+" ("+ UserMasters.Level3.COL_1+ ") VALUES(TOILET)";
-//        String QUERY5c = "INSERT INTO " +UserMasters.Level3.TABLE_NAME+" ("+ UserMasters.Level3.COL_1+ ") VALUES(SOAP)";
-//
+
         db.execSQL(QUERY1c);
-//        db.execSQL(QUERY2c);
-//        db.execSQL(QUERY3c);
-//        db.execSQL(QUERY4c);
-//        db.execSQL(QUERY5c);
+
 
         //level04 table
 
-       // db.execSQL("DROP TABLE IF EXISTS "+UserMasters.Level4.TABLE_NAME+ " ;");
-        String QUERY1d = "CREATE TABLE IF NOT EXISTS " + UserMasters.Level4.TABLE_NAME + " ( " +
+        String QUERY1d = "CREATE TABLE " + UserMasters.Level4.TABLE_NAME + " ( " +
                 UserMasters.Level4._ID + " INTEGER PRIMARY KEY, " +
                 UserMasters.Level4.COL_1+ " VARCHAR(100),"+
                 UserMasters.Level4.COL_2+ " VARCHAR(100) )";

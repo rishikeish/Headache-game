@@ -83,6 +83,7 @@ public class level01 extends AppCompatActivity {
 
         for(String ans : list){
             Log.w("mega" , "for loop runs" );
+            Log.w("answer" , ans );
             if(word.equalsIgnoreCase(ans)){
                 return true;
             }
