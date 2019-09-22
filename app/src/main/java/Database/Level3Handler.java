@@ -49,7 +49,7 @@ public class Level3Handler extends SQLiteOpenHelper {
                 sortOrder
         );
 
-        ArrayList Answers = new ArrayList<>();
+        ArrayList<String> Answers = new ArrayList<>();
 
 
         while(cursor.moveToNext()){
