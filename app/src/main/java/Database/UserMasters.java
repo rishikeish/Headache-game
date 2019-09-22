@@ -11,6 +11,7 @@ public final class UserMasters {
             public static final String TABLE_NAME = "USER_TABLE";
             public static final String COL_1 = "USERNAME";
             public static final String COL_2 = "PASSWORD";
+            public static final String COL_3 = "SCORE";
 
         }
 
@@ -18,6 +19,7 @@ public final class UserMasters {
 
             public static final String TABLE_NAME = "LEVEL1_TABLE";
             public static final String COL_1 = "ANSWER";
+
 
 
         }
@@ -43,7 +45,7 @@ public final class UserMasters {
 
             public static final String TABLE_NAME = "LEVEL4_TABLE";
             public static final String COL_1 = "TERM";
-            public static final String COL_2 = "ANSWER";
+
 
         }
 

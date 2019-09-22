@@ -86,7 +86,7 @@ public class Main2Activity extends AppCompatActivity {
                     t.show();
                 }else if(!checkUser(username)) {
                     dbHandler.addUser(username, password);
-                    Intent i = new Intent(getApplicationContext(), Level2_Activity.class);
+                    Intent i = new Intent(getApplicationContext(), level01.class);
                     i.putExtra("UserName", username);
 
                     Toast t = Toast.makeText(getApplicationContext(), "Registered successfully!", Toast.LENGTH_SHORT);

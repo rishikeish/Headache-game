@@ -30,6 +30,9 @@ public class level01 extends AppCompatActivity {
         setContentView(R.layout.activity_level01);
 
 
+        Intent i = getIntent();
+        final String username = i.getStringExtra("Username");
+
 
         check = findViewById(R.id.lvl1submit);
         check.setOnClickListener(new View.OnClickListener() {
@@ -57,6 +60,7 @@ public class level01 extends AppCompatActivity {
                     t.show();
 
                     Intent intent = new Intent(getApplicationContext(),Level2_Activity.class);
+                    intent.putExtra("UserName", username);
                     startActivity(intent);
                 }else{
                     Toast t = Toast.makeText(getApplicationContext() , "Entered Answers Are Not Correct" , Toast.LENGTH_SHORT);

@@ -44,13 +44,12 @@
         android:id="@+id/imageButton2"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:layout_gravity="center"
         android:layout_marginTop="0dp"
         android:adjustViewBounds="true"
+        android:background="@null"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/play"
-        android:layout_gravity="center"
-        android:onClick="onClick"
-        android:background="@null"
         />
 
 

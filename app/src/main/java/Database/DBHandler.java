@@ -27,7 +27,8 @@ public class DBHandler extends SQLiteOpenHelper {
 
         String QUERY1 = "CREATE TABLE " + UserMasters.Users.TABLE_NAME + " ( " +
                 UserMasters.Users.COL_1 + " VARCHAR(20) PRIMARY KEY, " +
-                UserMasters.Users.COL_2+ " VARCHAR(30) ) " ;
+                UserMasters.Users.COL_2+ " VARCHAR(30) , " +
+                UserMasters.Users.COL_3+ " INTEGER ) ";
 
         db.execSQL(QUERY1);
 
@@ -74,33 +75,11 @@ public class DBHandler extends SQLiteOpenHelper {
         String QUERY_CRYPTO2 = "INSERT INTO " +UserMasters.Level3.TABLE_NAME+ " VALUES(2,'RHYME')";
         String QUERY_CRYPTO3 = "INSERT INTO " +UserMasters.Level3.TABLE_NAME+ " VALUES(3,'NURSERY')";
 
-      // String QUERY_CRYPTO1 = "INSERT INTO " +UserMasters.Level3.TABLE_NAME+"( '" +UserMasters.Level3.COL_1+"', '" +UserMasters.Level3.COL_2+ "') VALUES (1,'LYRIC'); " ;
-      // String QUERY_CRYPTO2 = "INSERT INTO " +UserMasters.Level3.TABLE_NAME+ " ( '" +UserMasters.Level3.COL_1+ "', '" +UserMasters.Level3.COL_2+ "') VALUES (2,'RHYME'); " ;
-     //  String QUERY_CRYPTO3 = "INSERT INTO " +UserMasters.Level3.TABLE_NAME+ " ( '" +UserMasters.Level3.COL_1+ "', '" +UserMasters.Level3.COL_2+ "') VALUES (3,'NURSERY'); ";
-
         db.execSQL(QUERY1c);
         db.execSQL(QUERY_CRYPTO1);
         db.execSQL(QUERY_CRYPTO2);
         db.execSQL(QUERY_CRYPTO3);
 
-
-        //level04 table
-
-        String QUERY1d = "CREATE TABLE " + UserMasters.Level4.TABLE_NAME + " ( " +
-                UserMasters.Level4._ID + " INTEGER PRIMARY KEY, " +
-                UserMasters.Level4.COL_1+ " VARCHAR(100),"+
-                UserMasters.Level4.COL_2+ " VARCHAR(100) )";
-
-//        String QUERY2d = "INSERT INTO " +UserMasters.Level4.TABLE_NAME+" ("+ UserMasters.Level4.COL_1+ " ," +UserMasters.Level4.COL_2+ ") VALUES('' , '')";
-//        String QUERY3d = "INSERT INTO " +UserMasters.Level4.TABLE_NAME+" ("+ UserMasters.Level4.COL_1+ " ," +UserMasters.Level4.COL_2+ ") VALUES('', '')";
-//        String QUERY4d = "INSERT INTO " +UserMasters.Level4.TABLE_NAME+" ("+ UserMasters.Level4.COL_1+ " ," +UserMasters.Level4.COL_2+ ") VALUES('', '')";
-//        String QUERY5d = "INSERT INTO " +UserMasters.Level4.TABLE_NAME+" ("+ UserMasters.Level4.COL_1+ " ," +UserMasters.Level4.COL_2+ ") VALUES('', '')";
-//
-        db.execSQL(QUERY1d);
-//        db.execSQL(QUERY2d);
-//        db.execSQL(QUERY3d);
-//        db.execSQL(QUERY4d);
-//        db.execSQL(QUERY5d);
 
     }
 
@@ -115,6 +94,7 @@ public class DBHandler extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
         values.put(UserMasters.Users.COL_1, username);
         values.put(UserMasters.Users.COL_2, password);
+        values.put(UserMasters.Users.COL_3,0);
 
         long newRowId = db.insert(UserMasters.Users.TABLE_NAME, null, values);
         return true;
@@ -174,12 +154,12 @@ public class DBHandler extends SQLiteOpenHelper {
 
     }
 
-    public void updateInfo(String userName , String password){
+    public void updateInfo(String userName , int score){
 
         SQLiteDatabase db = getReadableDatabase();
 
         ContentValues values = new ContentValues();
-        values.put(UserMasters.Users.COL_2,password);
+        values.put(UserMasters.Users.COL_3,score);
 
         String selection = UserMasters.Users.COL_1;
         String[] selectionArgs = {userName};

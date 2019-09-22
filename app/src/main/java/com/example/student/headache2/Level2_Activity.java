@@ -23,6 +23,9 @@ public class Level2_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level2_);
 
+        Intent i = getIntent();
+        final String username = i.getStringExtra("Username");
+
         check = findViewById(R.id.lvl2submit);
         check.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +44,7 @@ public class Level2_Activity extends AppCompatActivity {
                     t.show();
 
                     Intent intent = new Intent(getApplicationContext(),lvl3_Activity.class);
+                    intent.putExtra("UserName", username);
                     startActivity(intent);
                 }else{
                     Toast t = Toast.makeText(getApplicationContext() , "Entered answers are not correct" , Toast.LENGTH_SHORT);

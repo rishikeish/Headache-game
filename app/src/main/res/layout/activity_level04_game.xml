@@ -67,7 +67,8 @@
         android:adjustViewBounds="true"
         android:background="@null"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/play" />
+        app:srcCompat="@drawable/play"
+        />
 
 
 </LinearLayout>

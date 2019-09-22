@@ -28,6 +28,9 @@ public class lvl3_Activity extends AppCompatActivity {
 
     public void sendMessage(View view){
 
+        Intent i = getIntent();
+        final String username = i.getStringExtra("Username");
+
         //assign values
         EditText a1 = findViewById(R.id.ans1);
         String answer1 = a1.getText().toString();
@@ -49,6 +52,7 @@ public class lvl3_Activity extends AppCompatActivity {
             congrat.show();
             //redirect to the next level
             Intent intent = new Intent(this , Level04.class);
+            intent.putExtra("UserName", username);
             startActivity(intent);
 
         } //successful answers
