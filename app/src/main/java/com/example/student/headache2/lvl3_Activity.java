@@ -13,10 +13,11 @@ import org.w3c.dom.Text;
 import java.util.List;
 
 import Database.Level2Handler;
+import Database.Level3Handler;
 
 public class lvl3_Activity extends AppCompatActivity {
 
-    Level2Handler db = new Level2Handler(this);
+    Level3Handler db = new Level3Handler(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
