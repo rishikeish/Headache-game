@@ -24,7 +24,9 @@ public class Level2_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_level2_);
 
         Intent i = getIntent();
-        final String username = i.getStringExtra("Username");
+        final String username = i.getStringExtra("UserName");
+
+        Log.w("lola" , username);
 
         check = findViewById(R.id.lvl2submit);
         check.setOnClickListener(new View.OnClickListener() {

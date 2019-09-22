@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -29,7 +30,9 @@ public class lvl3_Activity extends AppCompatActivity {
     public void sendMessage(View view){
 
         Intent i = getIntent();
-        final String username = i.getStringExtra("Username");
+        final String username = i.getStringExtra("UserName");
+
+        Log.w("lola" , username);
 
         //assign values
         EditText a1 = findViewById(R.id.ans1);

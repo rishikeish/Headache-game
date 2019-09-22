@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/puzzle_look"
-    tools:context=".MainActivity"
-    >
+    tools:context=".Hi_Score">
+
 
     <TextView
         android:id="@+id/guess"
         android:layout_width="353dp"
         android:layout_height="98dp"
         android:layout_gravity="center"
-        android:layout_marginTop="80dp"
         android:layout_marginStart="40dp"
-        android:text="@string/app"
+        android:layout_marginTop="80dp"
         android:fontFamily="@font/veteran_typewriter"
         android:textColor="#FFF"
-        android:textSize="60sp" />
+        android:textSize="40sp" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -42,21 +41,20 @@
             android:background="@drawable/play"
 
             android:contentDescription="@string/todo"
-            android:onClick="sendMessage" />
+            />
 
         <TextView
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="36dp"
+            android:layout_marginTop="55dp"
             android:layout_weight="1"
             android:fontFamily="@font/veteran_typewriter"
-            android:text="@string/play"
+            android:text="@string/replay"
             android:textAlignment="center"
             android:textColor="@color/q"
-            android:textSize="30dp"
-            android:layout_marginTop="55dp"
 
-            />
+            android:textSize="30dp" />
 
     </LinearLayout>
 
@@ -65,31 +63,30 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal" >
 
-    <ImageButton
-        android:id="@+id/home"
-        android:layout_width="76dp"
-        android:layout_height="72dp"
-        android:layout_marginStart="110dp"
-        android:layout_marginTop="0dp"
-        android:background="@drawable/ssettings"
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="76dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/done"
 
-        android:contentDescription="@string/todo" />
+            android:contentDescription="@string/todo" />
 
         <TextView
             android:id="@+id/setting"
             android:layout_width="wrap_content"
             android:layout_height="36dp"
+            android:layout_marginTop="20dp"
             android:layout_weight="1"
             android:fontFamily="@font/veteran_typewriter"
-            android:text="@string/settings"
+            android:text="@string/home"
             android:textAlignment="center"
             android:textColor="@color/q"
             android:textSize="30dp"
-            android:layout_marginTop="20dp"
 
             />
 
     </LinearLayout>
-
 
 </LinearLayout>

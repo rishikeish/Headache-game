@@ -8,6 +8,8 @@
     <string name="decode">Decode the Message</string>
     <string name="game">TSAJ htDe ihpc IMo</string>
     <string name="message">Enter decoded message here</string>
+    <string name="replay">REPLAY</string>
+    <string name="home">HOME</string>
 
     <string name="lvl3challenge">Cryptogram</string>
     <string name="lvl3">Level 03</string>
@@ -32,7 +34,7 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
 
-   <string name="app">HEADACHE</string>
+    <string name="app">HEADACHE</string>
     <string name="play">PLAY</string>
     <string name="music">Sound On</string>
     <string name="todo">TODO</string>

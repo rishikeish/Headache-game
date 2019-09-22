@@ -48,6 +48,8 @@ public class Main2Activity extends AppCompatActivity {
                     Toast t = Toast.makeText(getApplicationContext(), "You must enter password to sign in!", Toast.LENGTH_SHORT);
                     t.show();
                 }else if(activeUser(username ,password) == true ){
+
+
                     Intent i = new Intent(getApplicationContext(),level01.class);
                     i.putExtra("UserName", username);
                     Toast t = Toast.makeText(getApplicationContext(), "Login successful!", Toast.LENGTH_SHORT);

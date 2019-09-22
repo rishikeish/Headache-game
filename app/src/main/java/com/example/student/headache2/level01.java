@@ -31,8 +31,9 @@ public class level01 extends AppCompatActivity {
 
 
         Intent i = getIntent();
-        final String username = i.getStringExtra("Username");
+        final String username = i.getStringExtra("UserName");
 
+        Log.w("lola" , username);
 
         check = findViewById(R.id.lvl1submit);
         check.setOnClickListener(new View.OnClickListener() {

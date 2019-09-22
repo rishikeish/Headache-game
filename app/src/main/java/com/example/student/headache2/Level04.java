@@ -26,7 +26,9 @@ public class Level04 extends AppCompatActivity {
         setContentView(R.layout.activity_level04);
 
         Intent i = getIntent();
-        final String username = i.getStringExtra("Username");
+        final String username = i.getStringExtra("UserName");
+
+        Log.w("lola" , username);
 
         correct=findViewById(R.id.imageButton2);
         correct.setOnClickListener(new View.OnClickListener() {

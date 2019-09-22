@@ -30,7 +30,8 @@ public class level04_game extends AppCompatActivity {
 
 
         Intent i = getIntent();
-        final String username = i.getStringExtra("Username");
+        final String username = i.getStringExtra("UserName");
+        Log.w("lola" , username);
 
         correct = findViewById(R.id.lvl4submit);
         correct.setOnClickListener(new View.OnClickListener() {
@@ -45,14 +46,14 @@ public class level04_game extends AppCompatActivity {
                     t.show();
                 }else if (correct(answer)) {
 
-                    Toast t = Toast.makeText(getApplicationContext(), "You Have Entered The Right Answer", Toast.LENGTH_SHORT);
+                    Toast t = Toast.makeText(getApplicationContext(), "CONGRATULATIONS YOU HAVE COMPLETED THE GAME", Toast.LENGTH_SHORT);
                     t.show();
 
                     int score = 40;
 
                     db.updateInfo(username , score);
 
-                    Intent intent = new Intent(getApplicationContext(),level04_game.class);
+                    Intent intent = new Intent(getApplicationContext(),Hi_Score.class);
                     intent.putExtra("UserName", username);
                     startActivity(intent);
                 }else {
