@@ -81,5 +81,9 @@ public class lvl3_Activity extends AppCompatActivity {
         return false;
     }//end of check answer method
 
+    @Override
+    public void onBackPressed() {
+
+    }
 
 }
