@@ -58,7 +58,7 @@ public class level04_game extends AppCompatActivity {
                     startActivity(intent);
                 }else if (!correct(answer)){
 
-                    Toast t = Toast.makeText(getApplicationContext(), "The Answers Are Wrong", Toast.LENGTH_SHORT);
+                    Toast t = Toast.makeText(getApplicationContext(), "Incorrect Answers. Please Try Again To Advance To The Next Level.", Toast.LENGTH_SHORT);
                     t.show();
 
                     Intent intent = new Intent(getApplicationContext(),level04_game.class);

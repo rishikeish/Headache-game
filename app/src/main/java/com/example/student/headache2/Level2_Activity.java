@@ -42,14 +42,14 @@ public class Level2_Activity extends AppCompatActivity {
                     t.show();
                 }else if(correct(answer1)){
 
-                    Toast t = Toast.makeText(getApplicationContext() , "You have entered  correctly" , Toast.LENGTH_SHORT);
+                    Toast t = Toast.makeText(getApplicationContext() , "All Answers Are Successful! You May Advance To The Next Level!" , Toast.LENGTH_SHORT);
                     t.show();
 
                     Intent intent = new Intent(getApplicationContext(),lvl3_Activity.class);
                     intent.putExtra("UserName", username);
                     startActivity(intent);
                 }else{
-                    Toast t = Toast.makeText(getApplicationContext() , "Entered answers are not correct" , Toast.LENGTH_SHORT);
+                    Toast t = Toast.makeText(getApplicationContext() , "Incorrect Answers. Please Try Again To Advance To The Next Level." , Toast.LENGTH_SHORT);
                     t.show();
 
                     Intent intent = new Intent(getApplicationContext(),Level2_Activity.class);
