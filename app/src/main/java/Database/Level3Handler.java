@@ -11,6 +11,7 @@ import java.util.List;
 
 public class Level3Handler extends SQLiteOpenHelper {
 
+    //create database object
     public static final String DATABASE_NAME = "Headache.db";
 
     public Level3Handler( Context context) {
@@ -26,19 +27,19 @@ public class Level3Handler extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
 
     }
-
+    //list method to read all stored answers
     public List readAnswers() {
-        SQLiteDatabase db = getReadableDatabase();
+        SQLiteDatabase db = getReadableDatabase(); //open database link
+        //read table data
+        String[] projection = { 
 
-        String[] projection = {
-
-                UserMasters.Level3.COL_2
+                UserMasters.Level3.COL_2 //read answer column
 
         };
 
 
 
-
+        //select table data
         Cursor cursor = db.query(
                 UserMasters.Level3.TABLE_NAME,
                 projection,
@@ -48,20 +49,20 @@ public class Level3Handler extends SQLiteOpenHelper {
                 null,
                 null
         );
-
+        //array list to store retrieved data
         ArrayList<String> Answers = new ArrayList<>();
 
-
+        //while loop - read table data
         while(cursor.moveToNext()){
 
             String Answer = cursor.getString( cursor.getColumnIndexOrThrow(UserMasters.Level3.COL_2));
 
             Answers.add(Answer);
 
-        }
+        }//end of while loop
 
-        cursor.close();
-        return Answers;
+        cursor.close(); //end cursor
+        return Answers; //return values
 
     }
 }
