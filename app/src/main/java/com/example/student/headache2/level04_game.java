@@ -86,5 +86,9 @@ public class level04_game extends AppCompatActivity {
         return TextUtils.isEmpty(text);
     }
 
+    @Override
+    public void onBackPressed() {
+
+    }
 
 }
