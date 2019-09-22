@@ -49,17 +49,17 @@ public class level01 extends AppCompatActivity {
                 String answer4 = edit4.getText().toString();
 
                 if (isEmpty(answer1)|| isEmpty(answer2)|| isEmpty(answer3)|| isEmpty(answer4)){
-                    Toast t = Toast.makeText(getApplicationContext(), "You must enter all 4 answers!", Toast.LENGTH_SHORT);
+                    Toast t = Toast.makeText(getApplicationContext(), "You Must Enter All 4 Answers!", Toast.LENGTH_SHORT);
                     t.show();
                 }else if(correct(answer1) && correct(answer2) && correct(answer3) && correct(answer4)){
 
-                    Toast t = Toast.makeText(getApplicationContext() , "You have entered all answers correctly" , Toast.LENGTH_SHORT);
+                    Toast t = Toast.makeText(getApplicationContext() , "You Have Entered All Answers Correctly" , Toast.LENGTH_SHORT);
                     t.show();
 
                     Intent intent = new Intent(getApplicationContext(),Level2_Activity.class);
                     startActivity(intent);
                 }else{
-                    Toast t = Toast.makeText(getApplicationContext() , "Entered answers are not correct" , Toast.LENGTH_SHORT);
+                    Toast t = Toast.makeText(getApplicationContext() , "Entered Answers Are Not Correct" , Toast.LENGTH_SHORT);
                     t.show();
 
                     Intent intent = new Intent(getApplicationContext(),level01.class);

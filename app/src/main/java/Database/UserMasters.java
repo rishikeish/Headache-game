@@ -33,7 +33,8 @@ public final class UserMasters {
         protected static class Level3 implements BaseColumns{
 
             public static final String TABLE_NAME = "LEVEL3_TABLE";
-            public static final String COL_1 = "ANSWER";
+            public static final String COL_1 = "INDEX";
+            public static final String COL_2 = "ANSWER";
 
 
         }

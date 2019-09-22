@@ -67,11 +67,18 @@ public class DBHandler extends SQLiteOpenHelper {
 
 
         String QUERY1c = "CREATE TABLE " + UserMasters.Level3.TABLE_NAME + " ( " +
-                UserMasters.Level3._ID + " INTEGER PRIMARY KEY, " +
-                UserMasters.Level3.COL_1+ " VARCHAR(30) ) " ;
+                UserMasters.Level3.COL_1 + " INTEGER PRIMARY KEY, " +
+                UserMasters.Level3.COL_2+ " VARCHAR(30) ) " ;
 
+
+        String QUERY_CRYPTO1 = "INSERT INTO " + UserMasters.Level3.TABLE_NAME + " ("+ UserMasters.Level3.COL_1 + ", " + UserMasters.Level3.COL_2 + ") VALUES (1,'LYRIC'); " ;
+        String QUERY_CRYPTO2 = "INSERT INTO " + UserMasters.Level3.TABLE_NAME + " ("+ UserMasters.Level3.COL_1 + ", " + UserMasters.Level3.COL_2 + ") VALUES (2,'RHYME'); " ;
+        String QUERY_CRYPTO3 = "INSERT INTO " + UserMasters.Level3.TABLE_NAME + " ("+ UserMasters.Level3.COL_1 + ", " + UserMasters.Level3.COL_2 + ") VALUES (3,'NURSERY'); ";
 
         db.execSQL(QUERY1c);
+        db.execSQL(QUERY_CRYPTO1);
+        db.execSQL(QUERY_CRYPTO2);
+        db.execSQL(QUERY_CRYPTO3);
 
 
         //level04 table
