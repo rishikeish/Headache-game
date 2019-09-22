@@ -73,6 +73,11 @@ public class Level2_Activity extends AppCompatActivity {
 
         return TextUtils.isEmpty(text);
     }
+
+    @Override
+    public void onBackPressed() {
+
+    }
 }
 
 

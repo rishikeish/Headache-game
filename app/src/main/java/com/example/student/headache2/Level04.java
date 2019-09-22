@@ -20,4 +20,9 @@ public class Level04 extends AppCompatActivity {
 
 
     }
+
+    @Override
+    public void onBackPressed() {
+
+    }
 }

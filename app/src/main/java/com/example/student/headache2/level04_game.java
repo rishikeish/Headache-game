@@ -30,4 +30,9 @@ public class level04_game extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Wrong entry", Toast.LENGTH_SHORT).show();
         }
     }
+
+    @Override
+    public void onBackPressed() {
+
+    }
 }
