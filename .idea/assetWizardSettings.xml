@@ -83,6 +83,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
+                                                <entry key="paddingPercent" value="15" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -96,7 +97,7 @@
                                       <entry key="assetType" value="IMAGE" />
                                       <entry key="cropped" value="true" />
                                       <entry key="iconShape" value="CIRCLE" />
-                                      <entry key="imageAsset" value="C:\Users\Rishi\StudioProjects\Headache-game\app\src\main\res\drawable\lock.png" />
+                                      <entry key="imageAsset" value="C:\Users\Rishi\StudioProjects\Headache-game\app\src\main\res\drawable\brain.png" />
                                     </map>
                                   </option>
                                 </PersistentState>

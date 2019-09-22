@@ -31,12 +31,12 @@ public class Level3Handler extends SQLiteOpenHelper {
         SQLiteDatabase db = getReadableDatabase();
 
         String[] projection = {
-                UserMasters.Level3._ID,
-                UserMasters.Level3.COL_1
+                UserMasters.Level3.COL_1,
+                UserMasters.Level3.COL_2
 
         };
 
-        String sortOrder = UserMasters.Level3._ID + " DESC";
+        String sortOrder = UserMasters.Level3.COL_1 + " ASC";
 
 
         Cursor cursor = db.query(
@@ -54,7 +54,7 @@ public class Level3Handler extends SQLiteOpenHelper {
 
         while(cursor.moveToNext()){
 
-            String Answer = cursor.getString( cursor.getColumnIndexOrThrow(UserMasters.Level3.COL_1));
+            String Answer = cursor.getString( cursor.getColumnIndexOrThrow(UserMasters.Level3.COL_2));
 
             Answers.add(Answer);
 
