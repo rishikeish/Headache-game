@@ -56,12 +56,13 @@ public class level04_game extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(),Hi_Score.class);
                     intent.putExtra("UserName", username);
                     startActivity(intent);
-                }else {
+                }else if (!correct(answer)){
 
                     Toast t = Toast.makeText(getApplicationContext(), "The Answers Are Wrong", Toast.LENGTH_SHORT);
                     t.show();
 
                     Intent intent = new Intent(getApplicationContext(),level04_game.class);
+                    intent.putExtra("UserName", username);
                     startActivity(intent);
                 }
             }
