@@ -161,7 +161,7 @@ public class DBHandler extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
         values.put(UserMasters.Users.COL_3,score);
 
-        String selection = UserMasters.Users.COL_1;
+        String selection = UserMasters.Users.COL_1 + " LIKE ?";
         String[] selectionArgs = {userName};
 
         int count = db.update(
